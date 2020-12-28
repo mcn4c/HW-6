@@ -1,0 +1,63 @@
+body {
+  /*adding background image */
+    background-image: url("./Assets/4858243c9fc83e8.jpg");
+    height: 100%;
+    background-color: skyblue;
+    
+      /* Center and scale the image */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+/* styling each column */
+.column {
+    box-sizing: border-box;
+    border: solid 3px lightyellow;
+    border-radius: 20px;
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+/*styling search box*/
+ .city-search {
+
+   margin: 40px;
+   padding: 20px;
+  }
+  .user-city,  .btn {
+      box-sizing: border-box;
+      border: solid 3px skyblue;
+      border-radius: 7px;
+      padding: 20px;
+
+  }
+/* assigning width to one day forecast column */
+  #forecast {
+    width: 25%;
+  }
+/* assigning style fo five-day forecast div */
+  #five-day {
+    font-size: 20px;
+    color: yellow;
+    background: skyblue;
+    border: solid white 3px;
+    border-radius: 17px;
+  }
+ 
+  
+ 
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  /* hidden class to be added and removed based on event listeners*/
+  .hidden {
+    display: none;
+  }
+
+
