@@ -24,13 +24,15 @@
         <button class = "btn"; id="search-city"; type="submit"><i class="fa fa-search"></i></button>
       </form>
       <br>
+      <div id= "city-container"></div>
+      <br>
 
       <!-- user's city name will be displayed here-->
       <h1 class="city-name hidden" style="color: gold;"></h1>
 
       <div class="row ">
         
-        <!-- Div for one day forecast to be displayed-->
+        <!-- Div for one-day forecast to be displayed-->
         <div  id= "forecast" class="column hidden" style="background-color: skyblue; color: gold;">
           <h2 id="date-main"></h2>
           <img id="icon-main">
@@ -56,61 +58,9 @@
         <button id="five-day" type="button">Five Day Forecast</button>
       </div>
       </div>
-
-
-     
-      
-     
-      
-      
    
-      <!-- Div for first day of five-->
-      <div id = "five-day-display" class="row hidden ">
-        <!--<h1  style=" text-align: center; color: gold;">City Name</h1> -->
-        
-          <!-- Div for first day of five-->
-        <div id ="column1" class="column" style="background-color: skyblue">
-         
-        </div>
-       
-         <!-- Div for second day of five-->
-        <div id = "column2" class="column" style="background-color: skyblue">
-         
-        </div>
-      
-      
-      
-        <!-- Div for third day of five-->
-        <div  id = "column3" class="column" style="background-color: skyblue">       
-            
-             
-          </div>
-
-            <!-- Div for fourth day of five-->
-          <div  id = "column4" class="column" style="background-color: skyblue">
-            
-              
-             
-              
-            </div>
-              <!-- Div for fifth day of five-->
-      
-            <div id= "column5" class="column" style="background-color: skyblue">
-                           
-              
-              </div>
-    </div> 
-      
-    
-    
-    <!-- Place holder for div where user's previous city buttons 
-  will go -->
-
-  <div class = "city-container">
-
-
-    
-
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
   <script src="./script.js"></script>
   </body>
 </html>
