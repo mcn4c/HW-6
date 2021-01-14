@@ -6,11 +6,11 @@ This web app is for travellers who want to use a weather app to decide which des
 
 * When user searches a city they are presented with current weather conditions for that day
 * Current weather conditions include: city name, date, description, representative weather icon, temperature, humidity, the windspeed, and a color-coded UV Index
+* When user clicks on "Five Day Forecast" button forecasts for the next five days in that city will display.  The forecasts include: date, icon, description, temperature, and humidity levels.
 
 
 ## Criteria Not Met
 
-* five day forecast is not displaying
 *user's search history is not available
 
 
