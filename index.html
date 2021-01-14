@@ -1,66 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./CSS_Mini_Reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    
 
-    <title>Weather Finder</title>
-  </head>
-  
-  <body>
+<head>
 
-    <!-- Title and search bar for-->
-      <h1 style="text-align: center; color: gold; font-weight: 100px;"> Weather for Your Pleasure </h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./CSS_Mini_Reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-      <form class="example city-search" >
-        <input class = "user-city" type="text" placeholder="City" >
-        <button class = "btn"; id="search-city"; type="submit"><i class="fa fa-search"></i></button>
-      </form>
-      <br>
-      <div id= "city-container"></div>
-      <br>
 
-      <!-- user's city name will be displayed here-->
-      <h1 class="city-name hidden" style="color: gold;"></h1>
+  <title>Weather Finder</title>
+</head>
 
-      <div class="row ">
-        
-        <!-- Div for one-day forecast to be displayed-->
-        <div  id= "forecast" class="column hidden" style="background-color: skyblue; color: gold;">
-          <h2 id="date-main"></h2>
-          <img id="icon-main">
-          <p id="description-main"></p>
-          <table>
-            <tr>
-              <th id="temp-main"></th>
-              
-            </tr>
-            <tr>
-              <td id="hum-main"></td>
-              
-            </tr>
-            <tr>
-              <td id="windspeed-main"></td>
-            </tr>
-            <tr>
-              <td id ="uv-main">UV-index</td>
-            </tr>
-            </table>
-        <!--Button for user to click when wants five-day forecast-->
-        <h2 style="color: gold;">Click below for five-day forecast</h2>
-        <button id="five-day" type="button">Five Day Forecast</button>
-      </div>
-      </div>
-   
+<body>
+
+  <!-- Title and search bar for-->
+  <h1 style="text-align: center; color: gold; font-weight: 100px;"> Weather for Your Pleasure </h1>
+
+  <form class="example city-search">
+    <input class="user-city" type="text" placeholder="City">
+    <button class="btn" ; id="search-city" ; type="submit"><i class="fa fa-search"></i></button>
+  </form>
+  <br>
+  <div id="city-container"></div>
+  <br>
+
+  <!-- user's city name will be displayed here-->
+  <h1 class="city-name hidden" style="color: white; text-transform: uppercase;"></h1>
+
+  <div class="row ">
+
+    <!-- Div for one-day forecast to be displayed-->
+    <div id="forecast" class="column hidden" style="background-color: skyblue; color: white;">
+      <h2 id="date-main"></h2>
+      <img id="icon-main">
+      <p id="description-main"></p>
+      <table>
+        <tr>
+          <th id="temp-main"></th>
+
+        </tr>
+        <tr>
+          <td id="hum-main"></td>
+
+        </tr>
+        <tr>
+          <td id="windspeed-main"></td>
+        </tr>
+        <tr>
+          <td id="uv-main">UV-index</td>
+        </tr>
+      </table>
+      <!--Button for user to click when wants five-day forecast-->
+      <h2 style="color: white;">Click below for five-day forecast</h2>
+      <button id="five-day" type="button">Five Day Forecast</button>
+    </div>
+  </div>
+  <div id="five-day-forecast"> </div>
+
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
   <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
   <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
