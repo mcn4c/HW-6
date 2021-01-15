@@ -10,6 +10,7 @@ body {
   background-size: cover;
 }
 
+
 /* styling each column */
 .column {
   box-sizing: border-box;
@@ -39,7 +40,10 @@ body {
 
 /* assigning width to one day forecast column */
 #forecast {
-  width: 25%;
+  width: 100%;
+  padding: 10px;
+  font-size: 40px;
+
 }
 
 /* assigning style fo five-day forecast div */
@@ -49,6 +53,16 @@ body {
   background: skyblue;
   border: solid white 3px;
   border-radius: 17px;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #five-day-forecacast {
+    width: 100%;
+    height: 20%;
+  }
 }
 
 
